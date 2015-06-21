@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Data View Controller-->
+        <scene sceneID="EGX-eg-PRM">
+            <objects>
+                <viewController storyboardIdentifier="AddDataViewController" id="3TS-iW-Sbg" customClass="AddDataViewController" customModule="RealmSampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lTH-kt-whM"/>
+                        <viewControllerLayoutGuide type="bottom" id="T7X-Gg-2gn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jt3-CG-C2V">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s6L-hv-sOy">
+                                <rect key="frame" x="46" y="60" width="508" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dc0-F9-Diy">
+                                <rect key="frame" x="285" y="130" width="30" height="30"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addBtnTapped:" destination="3TS-iW-Sbg" eventType="touchUpInside" id="SwH-lO-yrT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dc0-F9-Diy" firstAttribute="top" secondItem="s6L-hv-sOy" secondAttribute="bottom" constant="40" id="8KE-vQ-lTx"/>
+                            <constraint firstItem="s6L-hv-sOy" firstAttribute="centerX" secondItem="dc0-F9-Diy" secondAttribute="centerX" id="CZs-RB-7Xa"/>
+                            <constraint firstItem="s6L-hv-sOy" firstAttribute="top" secondItem="lTH-kt-whM" secondAttribute="bottom" constant="40" id="SbS-PU-OBc"/>
+                            <constraint firstItem="s6L-hv-sOy" firstAttribute="leading" secondItem="Jt3-CG-C2V" secondAttribute="leadingMargin" constant="30" id="UEZ-bK-mgE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="s6L-hv-sOy" secondAttribute="trailing" constant="30" id="jSH-Kq-qpq"/>
+                            <constraint firstAttribute="centerX" secondItem="dc0-F9-Diy" secondAttribute="centerX" id="myf-mQ-nyt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="s6L-hv-sOy" id="Yej-Sh-J5V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N2m-3V-zjp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="430" y="236"/>
+        </scene>
+        <!--Edit Data View Controller-->
+        <scene sceneID="AM1-6e-5Qx">
+            <objects>
+                <viewController storyboardIdentifier="EditDataViewController" id="3pP-ga-5Hr" customClass="EditDataViewController" customModule="RealmSampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jf0-lq-AEC"/>
+                        <viewControllerLayoutGuide type="bottom" id="LAk-dp-6Dg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L1D-w1-7WC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vSN-Ey-ju6">
+                                <rect key="frame" x="46" y="60" width="508" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ktw-5r-bT9">
+                                <rect key="frame" x="275" y="130" width="51" height="30"/>
+                                <state key="normal" title="Update">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateBtnTapped:" destination="3pP-ga-5Hr" eventType="touchUpInside" id="3aW-xN-Nd7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Ktw-5r-bT9" secondAttribute="centerX" id="Idl-GA-aP9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vSN-Ey-ju6" secondAttribute="trailing" constant="30" id="QzC-VZ-jxF"/>
+                            <constraint firstItem="Ktw-5r-bT9" firstAttribute="top" secondItem="vSN-Ey-ju6" secondAttribute="bottom" constant="40" id="TF4-1Q-6NT"/>
+                            <constraint firstItem="vSN-Ey-ju6" firstAttribute="leading" secondItem="L1D-w1-7WC" secondAttribute="leadingMargin" constant="30" id="Uzk-8E-hQp"/>
+                            <constraint firstItem="vSN-Ey-ju6" firstAttribute="centerX" secondItem="Ktw-5r-bT9" secondAttribute="centerX" id="a9w-E5-gtn"/>
+                            <constraint firstItem="vSN-Ey-ju6" firstAttribute="top" secondItem="Jf0-lq-AEC" secondAttribute="bottom" constant="40" id="bma-CJ-X2x"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="vSN-Ey-ju6" id="H6u-LP-wvX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hN4-t1-wof" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="430" y="920"/>
+        </scene>
+    </scenes>
+</document>

@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		368B37A61B35D1A10075643F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368B37A51B35D1A10075643F /* AppDelegate.swift */; };
-		368B37A81B35D1A10075643F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368B37A71B35D1A10075643F /* ViewController.swift */; };
-		368B37AB1B35D1A10075643F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368B37A91B35D1A10075643F /* Main.storyboard */; };
 		368B37AD1B35D1A10075643F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368B37AC1B35D1A10075643F /* Images.xcassets */; };
-		368B37B01B35D1A10075643F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 368B37AE1B35D1A10075643F /* LaunchScreen.xib */; };
 		368B37BC1B35D1A10075643F /* RealmSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368B37BB1B35D1A10075643F /* RealmSampleAppTests.swift */; };
+		36AB40171B3710D900C73EE9 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AB40161B3710D900C73EE9 /* TopViewController.swift */; };
+		36AB401A1B37112B00C73EE9 /* AddDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AB40181B37112B00C73EE9 /* AddDataViewController.swift */; };
+		36AB401B1B37112B00C73EE9 /* AppConsts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AB40191B37112B00C73EE9 /* AppConsts.swift */; };
+		36AB401F1B37116300C73EE9 /* DataCRUD.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36AB401C1B37116300C73EE9 /* DataCRUD.storyboard */; };
+		36AB40201B37116300C73EE9 /* EditDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AB401D1B37116300C73EE9 /* EditDataViewController.swift */; };
+		36AB40211B37116300C73EE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36AB401E1B37116300C73EE9 /* Main.storyboard */; };
+		36AB40231B3711E300C73EE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AB40221B3711E300C73EE9 /* AppDelegate.swift */; };
+		36AB40251B37122A00C73EE9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36AB40241B37122A00C73EE9 /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +32,18 @@
 /* Begin PBXFileReference section */
 		368B37A01B35D1A10075643F /* RealmSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		368B37A41B35D1A10075643F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		368B37A51B35D1A10075643F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		368B37A71B35D1A10075643F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		368B37AA1B35D1A10075643F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		368B37AC1B35D1A10075643F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		368B37AF1B35D1A10075643F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		368B37B51B35D1A10075643F /* RealmSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmSampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		368B37BA1B35D1A10075643F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		368B37BB1B35D1A10075643F /* RealmSampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmSampleAppTests.swift; sourceTree = "<group>"; };
+		36AB40161B3710D900C73EE9 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopViewController.swift; path = Classes/TopViewController.swift; sourceTree = "<group>"; };
+		36AB40181B37112B00C73EE9 /* AddDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddDataViewController.swift; path = Classes/AddDataViewController.swift; sourceTree = "<group>"; };
+		36AB40191B37112B00C73EE9 /* AppConsts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppConsts.swift; path = Classes/AppConsts.swift; sourceTree = "<group>"; };
+		36AB401C1B37116300C73EE9 /* DataCRUD.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = DataCRUD.storyboard; path = Classes/DataCRUD.storyboard; sourceTree = "<group>"; };
+		36AB401D1B37116300C73EE9 /* EditDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditDataViewController.swift; path = Classes/EditDataViewController.swift; sourceTree = "<group>"; };
+		36AB401E1B37116300C73EE9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Classes/Main.storyboard; sourceTree = "<group>"; };
+		36AB40221B3711E300C73EE9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Classes/AppDelegate.swift; sourceTree = "<group>"; };
+		36AB40241B37122A00C73EE9 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = Classes/LaunchScreen.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +85,9 @@
 		368B37A21B35D1A10075643F /* RealmSampleApp */ = {
 			isa = PBXGroup;
 			children = (
-				368B37A51B35D1A10075643F /* AppDelegate.swift */,
-				368B37A71B35D1A10075643F /* ViewController.swift */,
-				368B37A91B35D1A10075643F /* Main.storyboard */,
+				36AB40071B36F53600C73EE9 /* Classes */,
 				368B37AC1B35D1A10075643F /* Images.xcassets */,
-				368B37AE1B35D1A10075643F /* LaunchScreen.xib */,
+				36AB40241B37122A00C73EE9 /* LaunchScreen.xib */,
 				368B37A31B35D1A10075643F /* Supporting Files */,
 			);
 			path = RealmSampleApp;
@@ -110,6 +116,36 @@
 				368B37BA1B35D1A10075643F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		36AB40071B36F53600C73EE9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				36AB40081B36F53E00C73EE9 /* Views */,
+				36AB40091B36F54600C73EE9 /* Models */,
+				36AB40221B3711E300C73EE9 /* AppDelegate.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		36AB40081B36F53E00C73EE9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				36AB401E1B37116300C73EE9 /* Main.storyboard */,
+				36AB40161B3710D900C73EE9 /* TopViewController.swift */,
+				36AB401C1B37116300C73EE9 /* DataCRUD.storyboard */,
+				36AB40181B37112B00C73EE9 /* AddDataViewController.swift */,
+				36AB401D1B37116300C73EE9 /* EditDataViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		36AB40091B36F54600C73EE9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				36AB40191B37112B00C73EE9 /* AppConsts.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +228,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				368B37AB1B35D1A10075643F /* Main.storyboard in Resources */,
-				368B37B01B35D1A10075643F /* LaunchScreen.xib in Resources */,
+				36AB40251B37122A00C73EE9 /* LaunchScreen.xib in Resources */,
 				368B37AD1B35D1A10075643F /* Images.xcassets in Resources */,
+				36AB40211B37116300C73EE9 /* Main.storyboard in Resources */,
+				36AB401F1B37116300C73EE9 /* DataCRUD.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +249,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				368B37A81B35D1A10075643F /* ViewController.swift in Sources */,
-				368B37A61B35D1A10075643F /* AppDelegate.swift in Sources */,
+				36AB40231B3711E300C73EE9 /* AppDelegate.swift in Sources */,
+				36AB40171B3710D900C73EE9 /* TopViewController.swift in Sources */,
+				36AB401B1B37112B00C73EE9 /* AppConsts.swift in Sources */,
+				36AB40201B37116300C73EE9 /* EditDataViewController.swift in Sources */,
+				36AB401A1B37112B00C73EE9 /* AddDataViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,25 +274,6 @@
 			targetProxy = 368B37B61B35D1A10075643F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		368B37A91B35D1A10075643F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				368B37AA1B35D1A10075643F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		368B37AE1B35D1A10075643F /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				368B37AF1B35D1A10075643F /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		368B37BD1B35D1A10075643F /* Debug */ = {
@@ -342,9 +363,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RealmSampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -352,6 +375,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RealmSampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +435,7 @@
 				368B37C11B35D1A10075643F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		368B37C21B35D1A10075643F /* Build configuration list for PBXNativeTarget "RealmSampleAppTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +444,7 @@
 				368B37C41B35D1A10075643F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
